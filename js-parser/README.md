@@ -1,5 +1,5 @@
 ## Description
-The js-parser is a simulation of what the Hyperledger Fabric chaincode parser will be doing.  Chaincode is slower to develop, requires a more complex development environment, and does nto provide a strong debugging environment.  We can simulate what is required in Node.js first, then convert the logic to chaincode.  
+The js-parser is a simulation of what the Hyperledger Fabric chaincode parser will be doing.  Chaincode is slower to develop, requires a more complex development environment, and does not provide a strong debugging environment.  We can simulate what is required in Node.js first, then convert the logic to chaincode.  
 
 The parser has two main calls:
 
@@ -40,6 +40,6 @@ http://YOURLOCALIP:3000/api#/
 
 ## Test
 
-To test the parser you should use one of the test templates
+To test the parser you should use one of the test templates. See samples folder for templates you can add to your Mongo templates database using the /template/create call
 
 Mosaique is [MIT licensed](LICENSE).
