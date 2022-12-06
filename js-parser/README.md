@@ -1,35 +1,22 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
-
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-
 ## Description
+The js-parser is a simulation of what the Hyperledger Fabric chaincode parser will be doing.  Chaincode is slower to develop, requires a more complex development environment, and does nto provide a strong debugging environment.  We can simulate what is required in Node.js first, then convert the logic to chaincode.  
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+The parser has two main calls:
+
+Create - create a new instance of a template.  This is used when a user first wants to instantiate an instance of a process guided by one of the available templates.  The user passes in the templateId and a name for the instance.  The parser will return the display objects for the user's role for the default state of the template as well as the instanceId used to uniquely identify this instance.
+
+Use - use an existing instance.  Any time a user wants to display the current state of a workflow instance or if they have executed one of the actions of the current state, they call the parser with the use command.  For this call the user provide the instanceId, and if they are executing an action it requires the actionId and related data.  The parser checks the action and if it is passed it attempts any transitions associated.  If the transition conditions are met, it will return the new state's display objects otherwise it will return the current state's display objects.
 
 ## Installation
 
 ```bash
 $ npm install
+```
+
+You need to provide a .env file with the connection string to a Mongo database instance.
+
+```bash
+MONGO_CONNECTIONSTRING=mongodb://100.100.100.100:27016/mosaique
 ```
 
 ## Running the app
@@ -45,29 +32,14 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Swagger interface
+
+There is a swagger interface for the REST APIs
+
+http://YOURLOCALIP:3000/api#/
+
 ## Test
 
-```bash
-# unit tests
-$ npm run test
+To test the parser you should use one of the test templates
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Mosaique is [MIT licensed](LICENSE).
