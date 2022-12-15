@@ -3,7 +3,7 @@ Mosaique provides an approach to build decentralized workflows for permissioned 
 
 # Getting Started
 
-Currently, we have a working version of the parser written in Node.js that is a stand-in for the eventual chaincode version.  We also have a sample renderer for Vue.js and the start of a visual editor.  You can find each of these in this repo. Go to the getting [started document]() for information on how to install and run these applications.
+Currently, we have a working version of the parser written in Node.js that is a stand-in for the eventual chaincode version.  We also have a sample renderer for Vue.js and the start of a visual editor.  You can find each of these in this repo. Go to the getting [started document](https://github.com/dave-promulgare/mosaique-decentralized-workflows-1/blob/main/documentation/gettingstarted.md) for information on how to install and run these applications.
 
 # How to Contribute
 
