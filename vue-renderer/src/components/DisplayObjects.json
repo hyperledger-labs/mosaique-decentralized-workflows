@@ -1,0 +1,144 @@
+[
+  {
+    "title": {
+      "text": "example title"
+    }
+  },
+  {
+    "header": {
+      "text": "exmaple header"
+    }
+  },
+  {
+    "text": {
+      "text": "Example of normal text block"
+    }
+  },
+  {
+    "image": {
+      "alt-text": "cute cat picture",
+      "src": "https://i.redd.it/8c4pgtjkvn831.jpg"
+    }
+  },
+  {
+    "video": {
+      "alt-text": "nature video",
+      "src": "https://www.youtube.com/watch?v=RK1K2bCg4J8"
+    }
+  },
+  {
+    "button": {
+      "text": "example button",
+      "action": "action-id"
+    }
+  },
+  {
+    "menu": {
+      "options": [
+        {
+          "submenu1": {
+            "text": "exmaple option 1",
+            "action": "actionID1"
+          },
+          "type": "test1"
+        },
+        {
+          "submenu2": {
+            "text": "exmaple option 2",
+            "action": "actionID2"
+          },
+          "type": "dropdown"
+        }
+      ]
+    }
+  },
+  {
+    "radioButtonList": {
+      "defaultSelected": true,
+      "options": [
+        {
+          "radioButton": {
+            "text": "exmaple option",
+            "isDefault": true
+          }
+        },
+        {
+          "radioButton": {
+            "text": "exmaple option 2",
+            "isDefault": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "checkBoxList": {
+      "minSelect": 0,
+      "maxSelect": 0,
+      "options": [
+        {
+          "checkBox": {
+            "text": "exmaple option"
+          }
+        },
+        {
+          "checkBox": {
+            "text": "exmaple option 2"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "form": []
+  },
+  {
+    "dropDownSelect": {
+      "defaultSelect": true,
+      "options": [
+        {
+          "option": {
+            "text": "exmaple option",
+            "isDefault": true
+          }
+        },
+        {
+          "option": {
+            "text": "exmaple option 2",
+            "isDefault": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "shortTextInput": {
+      "inputName": "Name of paragraph",
+      "inputLength": 256 
+    }
+  },
+  {
+    "paragraphInput": {
+      "inputName": "Name of paragraph",
+      "inputLength": 256 
+    }
+  },
+  {
+    "fileUpload": {
+      "inputName": "Upload your file",
+      "inputLength": 1 
+    }
+  },
+  {
+    "dateInput": {
+      "inputName": "input Date"
+      
+    }
+  },
+  {
+    "timeInput": {
+      "inputName": "input Date"
+      
+    }
+  }
+]
