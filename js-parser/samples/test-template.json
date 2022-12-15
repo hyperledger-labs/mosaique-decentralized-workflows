@@ -1,0 +1,184 @@
+{
+    "name": "Test Template",
+    "startingMachine": "0",
+    "roles": [
+      "Admin",
+      "User",
+      "Guest"
+    ],
+    "machines": [
+      {
+        "machineId": "0",
+        "displayName": "Main",
+        "startingState": "100",
+        "states": [
+          {
+            "stateId": "100",
+            "stateName": "Closed",
+            "roles": [
+              {
+                "roleId": "1000",
+                "displayData": [
+                  {
+                    "displayType": "Title",
+                    "displayContent": "Admin opening page",
+                    "actionId": "0"
+                  },
+                  {
+                    "displayType": "text",
+                    "displayContent": "You can open this up for the users.",
+                    "actionId": "0"
+                  },
+                  {
+                    "displayType": "image",
+                    "displayContent": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg",
+                    "actionId": "0"
+                  },
+                  {
+                    "displayType": "button",
+                    "displayContent": "Open page",
+                    "actionId": "105"
+                  }
+                ],
+                "actions": [
+                  {
+                    "actionId": "105",
+                    "actionName": "Open page",
+                    "transitionId": "120"
+                  }
+                ]
+              },
+              {
+                "roleId": "1001",
+                "displayData": [
+                  {
+                    "displayType": "Title",
+                    "displayContent": "Waiting for page opening",
+                    "actionId": "0"
+                  },
+                  {
+                    "displayType": "text",
+                    "displayContent": "The admin needs to open this up for the user.",
+                    "actionId": "0"
+                  }
+                ],
+                "actions": []
+              },
+              {
+                "roleId": "1002",
+                "displayData": [
+                  {
+                    "displayType": "Title",
+                    "displayContent": "Waiting for page opening",
+                    "actionId": "0"
+                  },
+                  {
+                    "displayType": "text",
+                    "displayContent": "The admin needs to open this up.",
+                    "actionId": "0"
+                  }
+                ],
+                "actions": []
+              }
+            ],
+            "transitions": [
+              {
+                "transitionId": "120",
+                "transitionName": "Move to open state",
+                "conditions": [
+                  {
+                    "conditionName": "Always",
+                    "condition": "true",
+                    "newState": "130"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stateId": "130",
+            "stateName": "Open",
+            "roles": [
+              {
+                "roleId": "1000",
+                "displayData": [
+                  {
+                    "displayType": "Title",
+                    "displayContent": "Admin open page",
+                    "actionId": "0"
+                  },
+                  {
+                    "displayType": "text",
+                    "displayContent": "Wait for user to close the page",
+                    "actionId": "0"
+                  }
+                ],
+                "actions": []
+              },
+              {
+                "roleId": "1001",
+                "displayData": [
+                  {
+                    "displayType": "Title",
+                    "displayContent": "Open page",
+                    "actionId": "0"
+                  },
+                  {
+                    "displayType": "text",
+                    "displayContent": "You can now close this page.",
+                    "actionId": "0"
+                  },
+                  {
+                    "displayType": "image",
+                    "displayContent": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg",
+                    "actionId": "0"
+                  },
+                  {
+                    "displayType": "button",
+                    "displayContent": "Close page",
+                    "actionId": "135"
+                  }
+                ],
+                "actions": [
+                  {
+                    "actionId": "135",
+                    "actionName": "Open page",
+                    "transitionId": "140"
+                  }
+                ]
+              },
+              {
+                "roleId": "1002",
+                "displayData": [
+                  {
+                    "displayType": "Title",
+                    "displayContent": "Waiting for page closing",
+                    "actionId": "0"
+                  },
+                  {
+                    "displayType": "text",
+                    "displayContent": "The user can close this page.",
+                    "actionId": "0"
+                  }
+                ],
+                "actions": []
+              }
+            ],
+            "transitions": [
+              {
+                "transitionId": "140",
+                "transitionName": "Move to closed",
+                "conditions": [
+                  {
+                    "conditionName": "Always",
+                    "condition": "true",
+                    "newState": "100"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
