@@ -53,13 +53,13 @@ technical solution that can handle the automation of workflows between
 organizations and individuals that retains the level of security and
 trust that each participant requires. That is, until now.
 
-Getting to automated decentralized workflows
+#### Getting to automated decentralized workflows
 
 There are a number of impediments to building decentralized workflows
 using traditional approaches. However, there are a variety of current
 techniques that can make decentralized workflows feasible.
 
-Smart contracts missing native support for workflows
+#### Smart contracts missing native support for workflows
 
 Blockchain smart contracts grew as an extension to basic value transfer
 ledger transactions. The motivation was to provide rules around when the
@@ -76,7 +76,7 @@ for other functions called by other users. The focus on single steps and
 the limitations on execution resources has limited the types of problems
 that blockchain system architects attempt to solve.
 
-The state machine pattern
+#### The state machine pattern
 
 The state machine is an existing software design pattern that is well
 understood that is useful for breaking processes down into individual
@@ -91,7 +91,7 @@ timer could be used to trigger the transitions. A more involved
 organizational workflow would have many states, multiple users or roles,
 a variety of inputs, and multiple transitions in and out of each state.
 
-Data-driven state machine
+#### Data-driven state machine
 
 In many situations, workflows need to be changed. This could happen
 based on user feedback, error corrections, legislative requirements, or
@@ -112,7 +112,7 @@ At this point it allows processes to be reused, and to be composed of
 multiple other processes. The data-driven state machine processes are
 now templates that can be used in composing larger systems.
 
-Coding by stakeholders
+#### Coding by stakeholders
 
 One of the difficulties in software development is undertaking the
 exercise to build up the requirements and to verify that the code that
@@ -130,7 +130,7 @@ This greatly reduces the amount of developer time required and assures
 the stakeholders that the process they are receiving matches their
 requirements.
 
-Governance is dissociated from code changes
+#### Governance is dissociated from code changes
 
 In a decentralized system, the parties involved with the system need to
 agree upon changes. They do this through a human governance process. Any
@@ -151,7 +151,7 @@ allows for changes that can happen as fast as the governance group can
 meet and approve them. It also provides an audit trail of changes and
 who authorized the changes, including the debates around the changes.
 
-Who can transition states?
+#### Who can transition states?
 
 Many organizational processes depend on experts to provide inputs that
 can transition states. In most processes people just trust that an
@@ -172,7 +172,7 @@ having to contact the original authority. It allows for the process to
 be audited to make sure that a participant was authorized to make the
 changes at the time that they did.
 
-Who runs the user interface?
+#### Who runs the user interface?
 
 Decentralized workflows need to provide the users with a user interface.
 The very nature of a decentralized system means that you can\'t have one
@@ -213,7 +213,7 @@ decentralized workflows. Each technique is well known, it is the unique
 combination that can be used to provide a solid platform for
 decentralized workflows.
 
-Data-driven state machine
+#### Data-driven state machine
 
 A state machine, often referred to as a Finite State Machine, has a
 fixed number of states and can have one or more starting and ending
@@ -232,17 +232,12 @@ inputs, and the logic to trigger transitions. Mosaique uses a JSON data
 structure to store a representation of a state machine as a template.
 The JSON template is composed of the following:
 
-1. template_id - this is a unique identifier for this specific
+1. template_id - this is a unique identifier for this specific template.
 
-   > template.
+2. roles - a collection of all of the roles that participate in this state machine and how to qualify for a role.
 
-2. roles - a collection of all of the roles that participate in this
+3. machines - a collection of substate machines that are in this state machine. This
 
-   > state machine and how to qualify for a role.
-
-3. machines - a collection of substate machines that are in this state
-
-   > machine. This
 
 visual editor
 
