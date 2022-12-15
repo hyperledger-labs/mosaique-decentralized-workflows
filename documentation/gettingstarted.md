@@ -23,7 +23,7 @@ Example .env
 MONGO_CONNECTIONSTRING=mongodb://localhost:27016/mosaique
 ```
 
-Your parser instance is not available at http://localhost:3000 
+Your parser instance is now available at http://localhost:3000 
 
 You can view the Swagger interface at http://localhost:3000/api
 
