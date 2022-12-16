@@ -1,4 +1,7 @@
+![](E:\projects\CRL\mosaique-decentralized-workflows-1\documentation\MosaiqueLogo.svg)
+
 # Mosaique Decentralized Workflows
+
 Mosaique provides an approach to build decentralized workflows for permissioned blockchain applications.  Mosaique has built-in governance workflows using mosaique itself.  The systems uses state machines for the workflow logic and json templates to make those state machines data-driven.  The goal is to allow non-programmers to develop and analyze their decentralized workflows and to deploy without having to change smart contract code.  For more information, see the [whitepaper](https://github.com/dave-promulgare/mosaique-decentralized-workflows-1/blob/main/documentation/whitepaper.md).
 
 # Getting Started
