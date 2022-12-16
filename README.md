@@ -1,4 +1,4 @@
-![](E:\projects\CRL\mosaique-decentralized-workflows-1\documentation\MosaiqueLogo.svg)
+![](./documentation/MosaiqueLogo.svg)
 
 # Mosaique Decentralized Workflows
 
@@ -26,3 +26,4 @@ The scope of Mosaique is to provide several useful features to blockchain projec
 
 # Sponsor
 John Carpenter - Co-Chair of the Hyperledger Learning Materials Development Working Group 
+
