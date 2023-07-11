@@ -4,33 +4,9 @@ Mosaique: Decentralized Workflows
 
 ## Decentralized enterprise business workflows
 
-Blockchain technology provides a way for organizations to work together
-in online automated systems while retaining the security and trust that
-they would expect from their internal systems. Organizations have very
-strong internal systems for their staff and clients to work on their
-business objectives. However, there are business use cases where a
-business workflow needs input from another organization to be completed.
-The requirement for another organization to be involved may come from
-government regulation or from internal organization policies. An
-organizational workflow is a prescribed set of steps required to combine
-input data and approvals to complete a task. When a workflow requires
-data or approvals from external organizations, the central systems of
-the organization are not well set up to handle this. There is a level of
-trust required that may not appeal to the risk management departments of
-the participating organizations. Efforts have been made to overcome this
-by involving third party organizations to provide the trust between
-organizations or to have the organizations directly integrate their
-systems together. These third parties could be banks, lawyers, or
-insurance companies. Including third parties increases the expense and
-slows down the processes. Having third parties involved makes automation
-more expensive and makes full system auditing very difficult. Requiring
-organizations to directly integrate with each other is a very slow and
-resource intensive option. It also makes the system susceptible to
-changes introduced by each party involved. As more organizations get
-involved, the cross product of integrations and dependencies becomes an
-insurmountable problem.
+Currently, organizations have robust internal systems for their staff and clients, but when external organizations need to be involved in a workflow, it becomes challenging. Trust is essential, but involving third parties like banks or insurance companies increases costs and slows down processes. Direct integration between organizations is resource-intensive and prone to complications. For example, in car insurance, multiple steps involving drivers, insurance companies, and the police require inputs, reports, and signoffs, leading to inefficiencies and the need for trust. We lack a technical solution that automates workflows between organizations while ensuring security and trust. Although we could have a direct integration between organizations, it is still highly complex and resource intensive.
 
-Let\'s look at the example of car insurance. In particular, let\'s
+Let's dive deeper at the example of car insurance. In particular, let's
 consider a vehicular accident claim. After an accident, an accident
 record needs to be created. This may include information from the two
 drivers, their insurance companies, and the police. That information is
@@ -52,6 +28,17 @@ when moving data between organizations or individuals. We have not had a
 technical solution that can handle the automation of workflows between
 organizations and individuals that retains the level of security and
 trust that each participant requires. That is, until now.
+
+### Introduction to Mosaique
+
+Mosaique decentralized workflows is a platform that uses Hyperledger Fabric blockchain which aims to provide interoperability between multiple organizations, while still maintaining the trust and security expected from such actions. On top of maintaining trust and security, Mosaique also provides added benefits such as increased productivity, increased security, and adaptability. There are many use cases that Mosaique can provide the solution to such as car insurance, supply chains, house ownership, manufacturing, concert tours, etc. The common denominator among all these use cases is that multiple organizations are sending inputs back and forth amongst one another. 
+
+Normally the flow of information between multiple organizations would be done using paper which can lead to information getting lost, fraud being committed, inaccuracies, slow processes, and increased expenses due to the number of third parties involved. A lot of the pitfalls associated with the traditional methods of handling business workflows between numerous corporations can be solved using decentralized automated workflows. Mosaique handles decentralized workflows by using the Hyperledger Fabric blockchain in conjunction with data-driven state machines. To put it simply, Mosaique’s data-driven state machine would represent the steps in a workflow. The steps would be represented through various states and determining which state to move to next would be based on inputs and transition logic.
+
+Mosaique provides a visual editor that allows stakeholders to create steps in a workflow process by simply dragging and dropping nodes on the screen. Each node represents a step in the workflow process. A template representing the workflow is constantly being updated whenever the user of the visual editor adds, deletes, or edits nodes. In technical terms, this template is represented by a JSON template that has all the necessary keys and values required to make up a particular workflow. The beauty of the visual editor is that the stakeholders do not have to understand the technical details of the template. This means that stakeholders can be involved in the development process as opposed to normally having to communicate with programmers for clarification on technical details that they lack.
+
+During each step in the workflow process the stakeholders can provide content that the users will see such as images, text inputs, display text, buttons, etc. Going back to the car insurance example, the user of the visual editor would provide different content for different roles in the system. For example, a claims adjuster would need to have an input box where they can insert a dollar amount, another input box for a description, and a button to go to the next state. This means the user of the visual editor would need to provide all the necessary display content that gets rendered to each user, during each state. The display content from the templates will be able to be rendered by multiple different interfaces, both web and mobile. At that point organizations can customize the styling of the display content to their liking, without needing any knowledge of front-end programming.
+
 
 #### Getting to automated decentralized workflows
 
@@ -251,17 +238,15 @@ display instances for reuse of workflow and multilingual support
 
 # Benefits
 
-Reduced cost of decentralized workflow development
+#### Allows easy and smooth collaboration between organisational workflows: 
+The traditional methods of handling business workflows, which rely on manual document exchange and involve multiple organizations, are slow and inefficient. This can lead to delays in completing tasks and processing information. With Mosaique organizations can streamline processes, reduce manual effort, and improve productivity. It removes the need for manual document handling and increasing the speed of information exchange.
 
-Rapid assurance of workflow functionality
+#### Increases security by reducing fraud:
+In the current system, trust between organizations is crucial, but verifying the authenticity and integrity of shared information is challenging. Mosaique creates a decentralized and unchangeable ledger. All transactions and approvals are recorded there, allowing every participant to access and validate the information. This promotes transparency and reduces the risk of fraud.
 
-Ease of integration with existing centralized systems
+#### Saves time:
+Traditional systems struggle to adapt to changes, especially when multiple organizations are involved. Integrating different systems and managing dependencies becomes complex and time-consuming. Mosaique allows for more flexible integration of systems between organizations, enabling them to quickly adjust their workflows and accommodate new processes without extensive configurations.
 
-No longer requires UI changes with workflow changes
-
-Complies with regulations
-
-Reach full decentralization
 
 # Technology
 
