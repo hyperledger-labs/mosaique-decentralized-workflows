@@ -6,7 +6,7 @@ Mosaique: Decentralized Workflows
 
 Currently, organizations have robust internal systems for their staff and clients, but when external organizations need to be involved in a workflow, it becomes challenging. Trust is essential, but involving third parties like banks or insurance companies increases costs and slows down processes. Direct integration between organizations is resource-intensive and prone to complications. For example, in car insurance, multiple steps involving drivers, insurance companies, and the police require inputs, reports, and signoffs, leading to inefficiencies and the need for trust. We lack a technical solution that automates workflows between organizations while ensuring security and trust. Although we could have a direct integration between organizations, it is still highly complex and resource intensive.
 
-Let's dive deeper at the example of car insurance. In particular, let's
+Let's dive deeper on the example of car insurance. Let's
 consider a vehicular accident claim. After an accident, an accident
 record needs to be created. This may include information from the two
 drivers, their insurance companies, and the police. That information is
