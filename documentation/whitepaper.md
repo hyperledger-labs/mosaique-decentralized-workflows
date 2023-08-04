@@ -1,4 +1,9 @@
-Mosaique: Decentralized Workflows
+ # <img src=  "https://user-images.githubusercontent.com/114115259/258351721-981318cc-2b07-4088-8010-c7a8d9a594fa.png" width="150" height="150">Mosaique: Decentralized Workflows
+
+
+
+<br/>
+
 
 # Problem
 
