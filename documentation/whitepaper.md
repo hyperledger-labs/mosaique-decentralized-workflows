@@ -60,7 +60,8 @@ Traditional systems struggle to adapt to changes, especially when multiple organ
 
 #### Implementation Representation:
 
-<img src= "https://user-images.githubusercontent.com/114115259/258575741-78754e64-2561-4688-8bed-d946c4a47043.png" width="450" height="600">
+<img src= "https://user-images.githubusercontent.com/114115259/258575741-78754e64-2561-4688-8bed-d946c4a47043.png" width="450" height="650" >
+
 
 1.	Incident Reporting: Policyholder reports the accident or incident to the relevant authorities, including the police, who may also record the event on Mosaique. People involved in the process adds a piece of information in each step.
 2.	Claim Registration on Mosaique: Policyholder registers the claim on the Mosaique platform, providing essential details and attaching relevant documents. The claim registration must be completed before moving to the next step.
