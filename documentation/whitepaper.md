@@ -1,46 +1,25 @@
-Mosaique: Decentralized Workflows
+ # <img src=  "https://user-images.githubusercontent.com/114115259/258351721-981318cc-2b07-4088-8010-c7a8d9a594fa.png" width="150" height="150">Mosaique: Decentralized Workflows
+
+
+
+<br/>
+
 
 # Problem
 
 ## Decentralized enterprise business workflows
 
-Blockchain technology provides a way for organizations to work together
-in online automated systems while retaining the security and trust that
-they would expect from their internal systems. Organizations have very
-strong internal systems for their staff and clients to work on their
-business objectives. However, there are business use cases where a
-business workflow needs input from another organization to be completed.
-The requirement for another organization to be involved may come from
-government regulation or from internal organization policies. An
-organizational workflow is a prescribed set of steps required to combine
-input data and approvals to complete a task. When a workflow requires
-data or approvals from external organizations, the central systems of
-the organization are not well set up to handle this. There is a level of
-trust required that may not appeal to the risk management departments of
-the participating organizations. Efforts have been made to overcome this
-by involving third party organizations to provide the trust between
-organizations or to have the organizations directly integrate their
-systems together. These third parties could be banks, lawyers, or
-insurance companies. Including third parties increases the expense and
-slows down the processes. Having third parties involved makes automation
-more expensive and makes full system auditing very difficult. Requiring
-organizations to directly integrate with each other is a very slow and
-resource intensive option. It also makes the system susceptible to
-changes introduced by each party involved. As more organizations get
-involved, the cross product of integrations and dependencies becomes an
-insurmountable problem.
+Currently, organizations have robust internal systems for their staff and clients, but when external organizations need to be involved in a workflow, it becomes challenging. Trust is essential, but involving third parties like banks or insurance companies increases costs and slows down processes. Direct integration between organizations is resource-intensive and prone to complications. For example, in car insurance, multiple steps involving drivers, insurance companies, and the police require inputs, reports, and signoffs, leading to inefficiencies and the need for trust. We lack a technical solution that automates workflows between organizations while ensuring security and trust. Although we could have a direct integration between organizations, it is still highly complex and resource intensive.
 
-Let\'s look at the example of car insurance. In particular, let\'s
-consider a vehicular accident claim. After an accident, an accident
-record needs to be created. This may include information from the two
-drivers, their insurance companies, and the police. That information is
-used to generate an insurance claim. An appraiser is consulted to
-determine the cost of repair and an adjuster recommends the coverage by
-the insurance company. Inputs, reports, and sign-offs are required from
-the different parties during the multiple steps involved and all parties
-want to assure that fraud is not being committed on them. Each step
-requires inputs and sign-offs. When these are passed as documents, the
-chain of custody requires parties to just trust each other.
+Let's dive deeper on the example of car insurance. John Anderson, a responsible driver, contacts his car insurance company, SafeDrive Insurance, to initiate a claim after a car accident. Assigned claims representative Emily gathers the necessary details, and adjuster Mike begins investigating the claim. Mike schedules a vehicle inspection and reviews John's insurance policy for coverage assessment. Meanwhile, John reports the accident to the police over the phone, and Officer Johnson arrives at the scene to prepare an official accident report.
+Mike requests a copy of the accident report from Officer Johnson to determine liability and fault. After assessing the damage and consulting with repair shops, Mike presents John with a settlement offer, explaining coverage limitations and deductibles. John agrees to the settlement and opts to have the repairs done at a recommended repair shop.
+Emily processes the payment, directing funds to the repair shop to cover costs. Once repairs are complete, John's vehicle is returned to its pre-accident condition. Throughout the process, John remains in contact with Emily, Mike, and Officer Johnson for updates and coordination. 
+
+
+![image](https://github.com/VishnuS7/mosaique-decentralized-workflows-1/assets/114115259/bd677281-11e1-484e-8fdb-ebb3e54f3d41)
+
+
+
 Verifications and validations are an expensive addition to the process
 and are only undertaken when there is significant distrust to warrant
 it.
@@ -52,6 +31,55 @@ when moving data between organizations or individuals. We have not had a
 technical solution that can handle the automation of workflows between
 organizations and individuals that retains the level of security and
 trust that each participant requires. That is, until now.
+
+### Introduction to Mosaique
+
+Mosaique decentralized workflows is a platform that uses Hyperledger Fabric blockchain which aims to provide interoperability between multiple organizations, while still maintaining the trust and security expected from such actions. On top of maintaining trust and security, Mosaique also provides added benefits such as increased productivity, increased security, and adaptability. There are many use cases that Mosaique can provide the solution to such as car insurance, supply chains, house ownership, manufacturing, concert tours, etc. The common denominator among all these use cases is that multiple organizations are sending inputs back and forth amongst one another. 
+
+Normally the flow of information between multiple organizations would be done using paper which can lead to information getting lost, fraud being committed, inaccuracies, slow processes, and increased expenses due to the number of third parties involved. A lot of the pitfalls associated with the traditional methods of handling business workflows between numerous corporations can be solved using decentralized automated workflows. Mosaique handles decentralized workflows by using the Hyperledger Fabric blockchain in conjunction with data-driven state machines. To put it simply, Mosaique’s data-driven state machine would represent the steps in a workflow. The steps would be represented through various states and determining which state to move to next would be based on inputs and transition logic.
+
+Mosaique provides a visual editor that allows stakeholders to create steps in a workflow process by simply dragging and dropping nodes on the screen. Each node represents a step in the workflow process. A template representing the workflow is constantly being updated whenever the user of the visual editor adds, deletes, or edits nodes. In technical terms, this template is represented by a JSON template that has all the necessary keys and values required to make up a particular workflow. The beauty of the visual editor is that the stakeholders do not have to understand the technical details of the template. This means that stakeholders can be involved in the development process as opposed to normally having to communicate with programmers for clarification on technical details that they lack.
+
+During each step in the workflow process the stakeholders can provide content that the users will see such as images, text inputs, display text, buttons, etc. Going back to the car insurance example, the user of the visual editor would provide different content for different roles in the system. For example, a claims adjuster would need to have an input box where they can insert a dollar amount, another input box for a description, and a button to go to the next state. This means the user of the visual editor would need to provide all the necessary display content that gets rendered to each user, during each state. The display content from the templates will be able to be rendered by multiple different interfaces, both web and mobile. At that point organizations can customize the styling of the display content to their liking, without needing any knowledge of front-end programming.
+
+![image](https://github.com/VishnuS7/mosaique-decentralized-workflows-1/assets/114115259/b8c0c94c-0395-4d7c-a185-094ee2ac09da)
+
+
+
+
+# Benefits
+
+#### Allows easy and smooth collaboration between organisational workflows: 
+The traditional methods of handling business workflows, which rely on manual document exchange and involve multiple organizations, are slow and inefficient. This can lead to delays in completing tasks and processing information. With Mosaique organizations can streamline processes, reduce manual effort, and improve productivity. It removes the need for manual document handling and increasing the speed of information exchange.
+
+#### Increases security by reducing fraud:
+In the current system, trust between organizations is crucial, but verifying the authenticity and integrity of shared information is challenging. Mosaique creates a decentralized and unchangeable ledger. All transactions and approvals are recorded there, allowing every participant to access and validate the information. This promotes transparency and reduces the risk of fraud.
+
+#### Saves time:
+Traditional systems struggle to adapt to changes, especially when multiple organizations are involved. Integrating different systems and managing dependencies becomes complex and time-consuming. Mosaique allows for more flexible integration of systems between organizations, enabling them to quickly adjust their workflows and accommodate new processes without extensive configurations.
+
+#### Implementation Representation:
+
+<img src= "https://user-images.githubusercontent.com/114115259/258575741-78754e64-2561-4688-8bed-d946c4a47043.png" width="450" height="650" >
+
+
+1.	Incident Reporting: Policyholder reports the accident or incident to the relevant authorities, including the police, who may also record the event on Mosaique. People involved in the process adds a piece of information in each step.
+2.	Claim Registration on Mosaique: Policyholder registers the claim on the Mosaique platform, providing essential details and attaching relevant documents. The claim registration must be completed before moving to the next step.
+3.	Claim Instance Creation: Upon claim registration, an instance of a decentralized claim document is automatically created on the decentralized blockchain network, containing claim details and dependencies. The instance depends on the successful completion of claim registration.
+4.	Decentralized Claim Investigation: Adjusters, insurance agents, and other involved parties access the smart contract and contribute to the investigation process using encrypted and permissioned access. Claim investigation relies on the existence of the smart contract and its data from the previous steps.
+5.	Damage Assessment and Digital Documentation: Digital documentation, such as photos and repair estimates, is stored securely on the blockchain for transparency and easy access. Damage assessment requires access to the documentation collected in the previous step.
+6.	Decentralized Liability Determination: Involved parties, including the policyholder, insurance company, and the police, if necessary, contribute to the liability determination process on Mosaique. Liability determination relies on the data and documentation stored in the smart contract and gathered in earlier steps.
+7.	Smart Contract Settlement: Upon agreement, the smart contract automatically triggers the settlement process based on predefined conditions and coverage terms. Settlement is contingent on successful liability determination and coverage evaluation from the preceding steps.
+8.	Repair Process Coordination via Mosaique: Mosaique facilitates coordination between the policyholder and approved repair shops for seamless repair procedures. The repair process coordination is enabled by the settlement data and documentation stored in the smart contract.
+9.	Decentralized Claim Payment: The claim settlement is automatically processed through the blockchain, enabling fast and secure payments. Claim payment relies on the successful completion of the previous steps, including the settlement data stored in the smart contract.
+10.	Smart Contract-Based Claim Closure: Once the claim is settled, the smart contract marks the claim as closed, and all involved parties receive a notification. Claim closure is triggered by the successful completion of the previous steps, indicating the resolution of the claim.
+
+
+
+
+
+
+
 
 #### Getting to automated decentralized workflows
 
@@ -249,19 +277,6 @@ verifiable credentials for role based access
 
 display instances for reuse of workflow and multilingual support
 
-# Benefits
-
-Reduced cost of decentralized workflow development
-
-Rapid assurance of workflow functionality
-
-Ease of integration with existing centralized systems
-
-No longer requires UI changes with workflow changes
-
-Complies with regulations
-
-Reach full decentralization
 
 # Technology
 
